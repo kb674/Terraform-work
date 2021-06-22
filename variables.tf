@@ -1,7 +1,7 @@
 variable "project_name" {
-  default = "terra"
+    default = "example-project"
 }
 
 variable "location" {
-  default = "uksouth"
+    default = "uksouth"
 }

@@ -1,3 +1,3 @@
-output "final-group-name" {
-  value = azurerm_resource_group.project-rg.name
+output "vm_private_ip" {
+    value = module.vm.private_ip
 }
