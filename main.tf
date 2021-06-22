@@ -1,19 +1,17 @@
 terraform {
-    required_providers {
-        azurerm = {
-            source = "hashicorp/azurerm"
-            version = "~> 2.46.0"
-
-        }
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~> 2.46.0"
     }
+  }
 }
 
 provider "azurerm" {
-    features {}
+  features {}
 }
 
-resource "azurerm_resource_group" "main" {
-    # create resource group named "terraform-rg"
-    name = "terraform-rg"
-    location = "uksouth"
+resource "azurerm_resource_group" "project-rg" {
+  name     = "${var.project_name}-rg"
+  location = var.location
 }
