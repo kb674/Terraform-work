@@ -35,3 +35,4 @@ kubectl apply -f service-three-deployment.yaml
 kubectl apply -f service-four-deployment.yaml
 sleep 30
 kubectl get service | grep "server"
+kubectl get pods 
