@@ -14,3 +14,7 @@ sudo apt install terraform -y
 
 # login, az login
 
+# run terraform
+cd Terraform/
+terraform init
+
