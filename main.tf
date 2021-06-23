@@ -73,7 +73,7 @@ resource "azurerm_network_security_rule" "backend-nsg-rule" {
   direction                   = "Inbound"
   access                      = "Allow"
   protocol                    = "Tcp"
-  source_port_range           = "10.0.1.0/24"
+  source_port_range           = "*"
   destination_port_range      = "22"
   source_address_prefix       = "*"
   destination_address_prefix  = "*"
