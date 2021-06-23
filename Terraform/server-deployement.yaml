@@ -21,7 +21,7 @@ spec:
         - containerPort: 5000
         env:
         - name: DATABASE_URI
-          value: mysql+pymysql://root:( add the password )@mysql-service/( add the database)
+          value: mysql+pymysql://root:password@mysql-service/fighters-db
 ---
 apiVersion: v1
 kind: Service
