@@ -21,7 +21,7 @@ terraform plan -no-color -out=create.tfplan
 terraform apply -no-color -auto-approve create.tfplan
 
 # azure cluster should be running, so download ctl and get credentials
-cd..
+cd ~/jenkins/.jenkins/workspace/pipeline@2
 sudo az aks install-cli 
 az aks get-credentials --resource-group k8group --name k8cluster
 
