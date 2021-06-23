@@ -26,7 +26,7 @@ sudo az aks install-cli
 az aks get-credentials --resource-group k8group --name k8cluster
 
 # deploy app
-
+cd scripts/
 kubectl apply -f db-deployement.yaml
 sleep 5
 kubectl apply -f server-deployement.yaml
