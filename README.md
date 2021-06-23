@@ -1,15 +1,4 @@
-# Index
-
-1. branchModel
-
-2. loadBalancer
-
-3. introduction
-
-4. basicSyntax
-
-5. modules
-
-6. aksCluster
-
-7. vnetTask
+Create a jenkins vm.
+Setup a webhook with this repo.
+In Terraform/ change the variables in the K8 config files.
+Now can build the job and should work.
