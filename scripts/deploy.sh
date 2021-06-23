@@ -19,3 +19,9 @@ cd Terraform/
 terraform init
 terraform plan -no-color -out=create.tfplan
 terraform apply -no-color -auto-approve create.tfplan
+
+# azure cluster should be running, so download ctl and get credentials
+sudo az aks install-cli -y
+az aks get-credentials --resource-group k8group --name k8cluster
+
+# deploy app
