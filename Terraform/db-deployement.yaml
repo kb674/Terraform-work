@@ -21,9 +21,9 @@ spec:
         - containerPort: 3306
         env:
         - name: MYSQL_DATABASE
-          value: ( enter value )
+          value: fighters-db
         - name: MYSQL_ROOT_PASSWORD
-          value: ( enter value )
+          value: password
 ---
 apiVersion: v1
 kind: Service
