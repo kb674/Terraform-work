@@ -11,3 +11,5 @@
 5. modules
 
 6. aksCluster
+
+7. vnetTask
