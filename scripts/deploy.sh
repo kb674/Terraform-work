@@ -21,11 +21,11 @@ terraform plan -no-color -out=create.tfplan
 terraform apply -no-color -auto-approve create.tfplan
 
 # azure cluster should be running, so download ctl and get credentials
+cd..
 sudo az aks install-cli 
 az aks get-credentials --resource-group k8group --name k8cluster
 
 # deploy app
-#!/bin/bash
 
 kubectl apply -f db-deployement.yaml
 sleep 5
