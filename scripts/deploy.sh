@@ -18,4 +18,4 @@ sudo apt install terraform -y
 cd Terraform/
 terraform init
 terraform plan
-terraform apply 
+terraform apply -input=false 
