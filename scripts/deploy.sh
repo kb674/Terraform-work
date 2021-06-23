@@ -17,5 +17,5 @@ sudo apt install terraform -y
 # run terraform
 cd Terraform/
 terraform init
-terraform plan
-terraform apply -input=false 
+terraform plan -no-color -out=create.tfplan
+terraform apply -no-color -auto-approve create.tfplan
