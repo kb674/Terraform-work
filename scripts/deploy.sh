@@ -17,4 +17,4 @@ sudo apt install terraform -y
 # run terraform
 cd Terraform/
 terraform init
-
+terraform plan
